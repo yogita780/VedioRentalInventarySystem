@@ -11,10 +11,7 @@ import definitation.Video;
 
 public class Main {
     public static void main(String[] args) {
-        Video video = new Video();
-        video.setVideoName("Bahubali:The beginning");
-        video.setRating(5);
-        video.setCheckOut(false);
+        Video video = new Video("I,Robot", 4);//default constructor:created by compiler.
         System.out.println(
                 "Video Name:" + video.getVideoName() + "," +
                         "Video Rating:" + video.getRating() + "," +

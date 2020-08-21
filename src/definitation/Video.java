@@ -37,6 +37,27 @@ public class Video {
     //we can use the getter methods to access the fields i.e read it.
     //2.setter method/transformer method/mutator method.
     // we can use the setter method to set the values of fields.i.e write it.
+    //3.constructor methods:
+    //we can use the constructor method to initailize the attributes of an object.
+    // two types of programmer defined constructor.
+    //1.non-parameterized:it as no parameter
+    public Video() {
+        this.videoName = "Siva G:THE BOSS";
+        this.rating = 5;
+        this.checkOut = true;
+    }
+
+    //2.parameterized:it would have some parameter.
+    public Video(String videoName, int rating) {
+        this.videoName = videoName;
+        this.rating = rating;
+        this.checkOut = true;
+    }
+
+    /*
+     *public <noAccessModifier> <noReturnType> <NameOfTheClass>(){}
+     *
+     */
     public void setVideoName(String videoName) {
         this.videoName = videoName;
 
