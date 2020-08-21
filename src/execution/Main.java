@@ -12,6 +12,9 @@ import definitation.Video;
 public class Main {
     public static void main(String[] args) {
         Video video = new Video();
+        video.setVideoName("Bahubali:The beginning");
+        video.setRating(5);
+        video.setCheckOut(false);
         System.out.println(
                 "Video Name:" + video.getVideoName() + "," +
                         "Video Rating:" + video.getRating() + "," +

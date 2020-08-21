@@ -17,11 +17,29 @@ public class Video {
     private boolean checkOut;
     private int rating;
 
+    public void setCheckOut(boolean checkOut) {
+        this.checkOut = checkOut;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    /*
+     * public <am:sameAsTheField> void set<NameOfTheField>(<sameAsTheField>){}
+     */
+    public String getVideoName() {
+        return videoName;
+    }
+
     // we can create special types of method to access these fields outside the class.
     //1. Getter method/observer methods/accessor methods.
     //we can use the getter methods to access the fields i.e read it.
-    public String getVideoName() {
-        return videoName;
+    //2.setter method/transformer method/mutator method.
+    // we can use the setter method to set the values of fields.i.e write it.
+    public void setVideoName(String videoName) {
+        this.videoName = videoName;
+
     }
 
     public int getRating() {
