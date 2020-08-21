@@ -16,4 +16,24 @@ public class Video {
     private String videoName;
     private boolean checkOut;
     private int rating;
+
+    // we can create special types of method to access these fields outside the class.
+    //1. Getter method/observer methods/accessor methods.
+    //we can use the getter methods to access the fields i.e read it.
+    public String getVideoName() {
+        return videoName;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    //exception for booleans:the getter method starts with is instead od get.
+    public boolean isCheckOut() {
+        return checkOut;
+    }
+    /*
+     *
+     * public <am:sameAsTheFields> <rt:sameAsTheFields> get<NameOfTheField>(){}
+     */
 }
